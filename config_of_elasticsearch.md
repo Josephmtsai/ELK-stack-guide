@@ -106,8 +106,6 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 >>>>Minimum amount of swapping without disabling it entirely.
 `vm.swappiness=1`     
 
-
-
 >>Create purge.sh:
   `vi /etc/elasticsearch/purge.sh`
   
