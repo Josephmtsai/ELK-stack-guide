@@ -14,9 +14,16 @@
 
 ## Adjust config File
 
+## Logstash Grok Pattern
 
 
 
 
 
 ![](Picture1.png)
+
+* https://github.com/elastic/logstash/blob/v1.3.3/patterns/grok-patterns
+* https://grokdebug.herokuapp.com/
+* https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html
+* http://christophe.vandeplas.com/2014/06/setting-up-single-node-elk-in-20-minutes.html
+
