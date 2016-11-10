@@ -22,6 +22,12 @@ EX: /es_data
 
 這對我們的設定非常重要 
 
+##Elasticsearch 預設 /etc/Elasticsearch/elasticsearch.yml
 
 
+
+`vi /etc/elasticsearch/elasticsearch.yml`
+
+
+>> cluster.name: 如果是升級 請跟過去的folder相同 ex: loggin-dev
     
