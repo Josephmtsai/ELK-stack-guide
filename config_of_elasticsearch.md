@@ -5,4 +5,10 @@
 >>
 >>如果找不到請用下列指令去尋找
 
-    find / -type d -name 'elasticsearch' 
+`find / -type d -name 'elasticsearch'`
+
+
+##Setting Elasticsearch
+
+
+    
