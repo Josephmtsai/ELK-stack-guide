@@ -1,9 +1,9 @@
 # 2.2 Config Of ElasticSearch
 
->>請先找到相關的路徑 
->>通常五版 現在安裝路徑都是在/usr/share/elasticsearch     
->>
->>如果找不到請用下列指令去尋找
+>請先找到相關的路徑 
+>通常五版 現在安裝路徑都是在/usr/share/elasticsearch     
+>
+>如果找不到請用下列指令去尋找
 
 `find / -type d -name 'elasticsearch'`
 
@@ -64,7 +64,7 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 設定一樣在
 `vi /etc/elasticsearch/elasticsearch.yml`
 
->>增減下列設定   
+>增減下列設定   
 `node.name: dev-01`   
 `node.master: true`   
 `node.data: true`   
@@ -101,12 +101,13 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 
 ##Elasticsearch 舊版本設定 2.xx
 
->>Setting swap in Elasticsearch Server:
+>Setting swap in Elasticsearch Server:
 `vi /etc/sysctl.conf`
->>>>Minimum amount of swapping without disabling it entirely.
+>>Minimum amount of swapping without disabling it entirely.
 `vm.swappiness=1`     
-
->>Create purge.sh:
+    
+    
+>Create purge.sh:
   `vi /etc/elasticsearch/purge.sh`
   
   
@@ -139,10 +140,10 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
     #curl -XDELETE "$ELK_URL_AND_PORT /*metadata*"
     curl "$ELK_URL_AND_PORT /_cat/indices"
 
-Setting crontab:
-[~]# vi /etc/crontab
-# Daily purge data at 00:00
-0 0 * * * root /bin/sh /etc/elasticsearch/purge.sh
+>Setting crontab:   
+`vi /etc/crontab`
+    # Daily purge data at 00:00
+    0 0 * * * root /bin/sh /etc/elasticsearch/purge.sh
 
 
 
