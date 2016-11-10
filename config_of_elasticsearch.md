@@ -35,9 +35,55 @@ EX: /es_data
 >> network.bind_host: 0.0.0.0 (binding all IP)
 >> http.port: 9200 (預設)
 >> discovery.zen.ping.unicast.hosts: ["host1", "host2"]  (假設需要設定cluster 才需要 請給其他台的IP)
+![](Image 14.png)
+`:wq`   
+`systemctl start elasticsearch`
+
+成功的話可以透過
+
+/var/log/elasticserach 看到log 或是 http://172.16.49.166:9200/ 看到輸出的結果
+
+![](Image 13.png)
+
+##Elasticsearch Cluster 設定
+
+https://neil-tutorial.blogspot.tw/2016/01/elasticsearch-cluster.html
+http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
+設定一樣在
+`vi /etc/elasticsearch/elasticsearch.yml`
+
+>>增減下列設定   
+`node.name: dev-01`   
+`node.master: true`   
+`node.data: true`   
+`http.cors.allow-origin: "*"`   
+`http.cors.enabled: true`   
+
+如果有兩台cluster
+
+一定要一台是master node  另外一個是data node
+
+設定可以有這幾種:
+
+* master: true data :true 是master也存放資料
+* master: false data :true 單純存放資料
+* master: false data:false 單純搜尋
+* master: true data: false 單純當master 控制資料流向
 
 
+設定完以後重啟server他們會自動將cluster裡面的資料做HA:(需要花一點時間)
 
+:wq`   
+`systemctl start elasticsearch`
+##Elasticsearch Indice
+
+
+`http://172.16.49.166:9200/_cat/indices`
+
+![](Image 15.png)
+
+yellow: 代表沒有備份到cluster
+green: 代表cluster裡面所有node都有
 
 
     
