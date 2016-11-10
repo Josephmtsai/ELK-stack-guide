@@ -15,7 +15,11 @@ Connect from server
 ![](Image 4.png)
 upload file to tmp folder /tmp
 
-```lcd d:\ELK``` (switch to local disk folder)
-```mkdir /tmp``` (create a remote folder to temp use) 
-```cd /tmp``` (switch to remote linux folder, if exist) 
-```put elasticsearch-5.0.0.rpm```
+```lcd d:\ELK``` (switch to local disk folder)   
+```mkdir /tmp``` (create a remote folder to temp use)    
+```cd /tmp``` (switch to remote linux folder, if exist)    
+```put elasticsearch-5.0.0.rpm```   
+```put kibana-5.0.0-x86_64.rpm```   
+```put elasticsearch-5.0.0.rpm```   
+![](Image 5.png)
+
