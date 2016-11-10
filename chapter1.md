@@ -20,6 +20,14 @@ upload file to tmp folder /tmp
 ```cd /tmp``` (switch to remote linux folder, if exist)    
 ```put elasticsearch-5.0.0.rpm```   
 ```put kibana-5.0.0-x86_64.rpm```   
-```put elasticsearch-5.0.0.rpm```   
+```put logstash-5.0.0.rpm```   
 ![](Image 5.png)
+![](1.png)
+
+
+## Install JAVA 
+
+1. Please upload file as Before says bn   
+
+
 
