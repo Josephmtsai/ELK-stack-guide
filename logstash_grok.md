@@ -67,6 +67,13 @@ http://grokconstructor.appspot.com/do/match
 * 撰寫的時候請先判斷欄位 是否存在 在寫
 
 
+* 如果Server 有多台logstash  可以透過加tag 區分來源server
+      filter {
+          mutate {
+              add_tag => [ "dev-logstash-01" ]
+          }
+      }
+
 
 完整範例如下:
 
@@ -124,6 +131,20 @@ http://grokconstructor.appspot.com/do/match
 
           }
       }
+
+#Output
+>host =>如果是cluster 可以打所有SERVER 他會自動sync
+>index => ww 是BY week
+
+
+
+        output {
+          elasticsearch {
+            hosts => ["http://172.16.49.166:9200"]
+            index => "%{[@metadata][beat]}-%{+xxxx.ww}"
+            document_type => "%{[@metadata][type]}"
+           }
+        }
 
 
 更詳細的Pattern (188)
