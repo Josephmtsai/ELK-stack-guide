@@ -29,5 +29,15 @@ EX: /es_data
 `vi /etc/elasticsearch/elasticsearch.yml`
 
 
->> cluster.name: 如果是升級 請跟過去的folder相同 ex: loggin-dev
+>> cluster.name: 如果是升級 請跟過去的folder相同 ex: loggin-dev   
+>> node.name: kibanaV1  (請設定唯一)
+>> path.data: /es_data (剛剛的folder)
+>> network.bind_host: 0.0.0.0 (binding all IP)
+>> http.port: 9200 (預設)
+>> discovery.zen.ping.unicast.hosts: ["host1", "host2"]  (假設需要設定cluster 才需要 請給其他台的IP)
+
+
+
+
+
     
