@@ -43,9 +43,12 @@ EX: 你想要讓logstash 使用debug模是觀看你的pattern 設定
 
 ![](Image 7.png)
 
-接著你應該會在/var/log/lostash/內看到log，正確啟動都會有寫出
+接著你應該會在/var/log/lostash/內看到log，正確啟動都會有寫出log 
 
 ![](Image 8.png)
+
+或是從`top -u logstash` 查看service是否起來
+
 Config請參考
 
 https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
