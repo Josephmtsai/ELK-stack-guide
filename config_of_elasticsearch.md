@@ -99,6 +99,52 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 * red: 代表有問題 需要recovery
 `http://172.16.49.166:9200/__recovery?logstash-188bet-2016.43`
 
+##Elasticsearch 舊版本設定 2.xx
+
+>>Setting swap in Elasticsearch Server:
+`vi /etc/sysctl.conf`
+>>>>Minimum amount of swapping without disabling it entirely.
+`vm.swappiness=1`     
+
+
+
+>>Create purge.sh:
+  `vi /etc/elasticsearch/purge.sh`
+  
+  
+    #!/bin/sh
+    KEEP_WEEK=3
+    ELK_DIR=/ELKDB/elasticsearch/nodes/0/indices/
+    ELK_URL_AND_PORT=localhost:9200
+
+    KEEP_ARR=()
+    i=0
+    while [ $i -lt $KEEP_WEEK ]
+    do
+      KEEP_ARR[$i]=$(date +%Y).`expr $(date +%V) - $i`
+      ((i++))
+    done
+    keep=0
+    for name in $(ls $ELK_DIR)
+    do
+      ((keep = 0))
+      for item in ${KEEP_ARR[@]}
+      do
+        if [[ $name == *"-$item"* ]]; then
+          ((keep = 1))
+        fi
+      done 
+      if [[ $keep == 0 ]]; then
+        curl -XDELETE "$ELK_URL_AND_PORT/$name"
+      fi
+    done
+    #curl -XDELETE "$ELK_URL_AND_PORT /*metadata*"
+    curl "$ELK_URL_AND_PORT /_cat/indices"
+
+Setting crontab:
+[~]# vi /etc/crontab
+# Daily purge data at 00:00
+0 0 * * * root /bin/sh /etc/elasticsearch/purge.sh
 
 
 
