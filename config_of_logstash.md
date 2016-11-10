@@ -32,6 +32,8 @@
     
 基本上不需要調整任何的設定 除非你有檔案要修改 
 
+>>pipeline.batch.size: 10000
+>>
 EX: 你想要讓logstash 使用debug模是觀看你的pattern 設定
 
      vi /etc/logstash/logstash.yml
