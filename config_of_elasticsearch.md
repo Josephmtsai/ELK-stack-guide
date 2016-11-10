@@ -16,5 +16,12 @@ EX: /es_data
 設定可以寫入的權限
 `chmod -R 777 /es_data/`
 
+**如果過去有的資料 會有cluster-name**
+
+![](Image 11.png)
+
+這對我們的設定非常重要 
+
+
 
     
