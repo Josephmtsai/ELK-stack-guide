@@ -54,11 +54,21 @@ http://grokconstructor.appspot.com/do/match
 >%{TIMESTAMP_ISO8601:logDate}  TIMESTAMP_ISO8601 代表他內建的條件 : 後面是你想要的欄位名稱    
 >%{POSINT:processId:int} 最後可以指定他的型態    
 >(?&lt;logger>[A-Z\-a-z .]+) 如果想自定pattern 格式 可以透過 [內的regular expression]去撰寫    
+>mutate => 可以將你的欄位移除 或是轉換型態   
+>GREEDYDATA => 剩餘資料全部變成此欄位
+* tag:可以用來搜尋 : 可以透過 動態的方法 加入tag
+
+      mutate {
+        add_tag => [ "%{httpMethod}" ,"%{apiPath}" ]
+      }	
+
+* geoip 可以將ip 轉換成地圖所需的格式 經緯度
+* **database => "/etc/logstash/GeoLiteCity.dat** 此在五版已經改為內建 請勿在加入
+* 撰寫的時候請先判斷欄位 是否存在 在寫
 
 
-基本設定
 
-
+完整範例如下:
 
       filter {
           if  [@metadata][beat] =~ "188bet"   {
@@ -115,3 +125,7 @@ http://grokconstructor.appspot.com/do/match
           }
       }
 
+
+更詳細的Pattern (188)
+
+https://docs.google.com/spreadsheets/d/1fJVNxEt8sxeC78p-XqAZyqQBn9n6p4CYE6zi5IagkF8/edit#gid=0
