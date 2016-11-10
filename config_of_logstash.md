@@ -55,3 +55,12 @@ Config請參考
 
 https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
 ## 五版logstash 的Geocity.dat 判斷區域IP位置已經取消了 千萬不要再把檔案放入
+
+
+## 過去版本設定
+
+`vi /etc/init.d/logstash`
+`LS_OPTS="-w 8"`
+>>Recommend to keep 1g memory for system    
+`LS_HEAP_SIZE="7g"`   
+`LS_OPEN_FILES=65535`
