@@ -20,8 +20,8 @@
 ## logstash 預設會先抓/etc/logstash/conf.d 的config檔案
 請務必先放預設的conf 檔案
 
-    1.
-
+>> 使用這個結構 10. input  && 30.output 是一定必要的檔案 代表輸出跟輸入   
+![](Image 10.png)
 ## logstash 預設會先抓/etc/logstash/logstash.yml
 
 如果不知道的話 可以用查看他預設的路徑
