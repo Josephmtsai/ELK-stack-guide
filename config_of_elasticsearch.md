@@ -10,5 +10,11 @@
 
 ##Setting Elasticsearch
 
+**請先確認存放資料的folder權限重新安裝或是使用存在資料的folder** 
+
+EX: /es_data    
+設定可以寫入的權限
+`chmod -R 777 /es_data/`
+
 
     
