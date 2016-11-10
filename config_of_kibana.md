@@ -9,13 +9,19 @@
 
 
 ##kibana 預設 /etc/kibana/kibana.yml
-
+`vi /etc/elasticsearch/elasticsearch.yml`
 >server.port:5601
 >server.host: 設定server ip
->elasticsearch.url: 如果不是同一台請修改 url
+>elasticsearch.url: 如果不是同一台請修改 url   
 ![](Image 16.png)
 
+`:wq` save file
 
+`systemctl start kibana`   
+理論上在 就可以看到畫面
+>http://172.16.49.166:5601/
+
+![](Image 17.png)
 ##kibana 舊版本設定
 
 **Register Kibana in systemctl:**
