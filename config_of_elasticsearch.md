@@ -35,8 +35,20 @@ EX: /es_data
 >> network.bind_host: 0.0.0.0 (binding all IP)
 >> http.port: 9200 (預設)
 >> discovery.zen.ping.unicast.hosts: ["host1", "host2"]  (假設需要設定cluster 才需要 請給其他台的IP)
+>> discovery.zen.ping.multicast.enabled: false
+
 ![](Image 14.png)
 `:wq`   
+
+
+
+>>>>過去舊版本的用法 (Heap size需要設定 新版本位置可能相同)    
+`vi /etc/sysconfig/elasticsearch`   
+  Your Elasticsearch data directory
+`DATA_DIR=/es_data`   
+  Set ES_HEAP_SIZE to 50% of available RAM, but not more than 31g     
+`ES_HEAP_SIZE=4g`
+
 `systemctl start elasticsearch`
 
 成功的話可以透過
