@@ -15,6 +15,7 @@ Please Use SSH and Use Root to Login and Install
     rpm -ivh kibana-5.0.0-x86_64.rpm
     
 >> rpm -qa logstash  代表 查詢目前的版本
+>> 
 >> rpm -e logstash 代表 移除套件    
     
 ![](2.png)    
