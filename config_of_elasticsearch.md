@@ -100,4 +100,6 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 `http://172.16.49.166:9200/__recovery?logstash-188bet-2016.43`
 
 
+
+
     
