@@ -4,5 +4,5 @@
 
 ex:`setting: aaaa`
 
-避免判斷錯誤
+避免linux判斷錯誤
 
