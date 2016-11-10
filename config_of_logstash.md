@@ -17,7 +17,10 @@
 停止service    
      
     systemctl start logstash    
+## logstash 預設會先抓/etc/logstash/conf.d 的config檔案
+請務必先放預設的conf 檔案
 
+    1.
 
 ## logstash 預設會先抓/etc/logstash/logstash.yml
 
@@ -31,8 +34,14 @@ EX: 你想要讓logstash 使用debug模是觀看你的pattern 設定
 
      vi /etc/logstash/logstash.yml
      修改 log.level:debug 
-存檔請下指令   
-     :wq
+存檔請下指令，接著重啟SERVICE
+
+    :wq
+    systemctl restart logstash         
 
 ![](Image 7.png)
+
+接著你應該會在/var/log/lostash/內看到log，正確啟動都會有寫出
+
+![](Image 8.png)
 
