@@ -32,7 +32,7 @@ EX: 你想要讓logstash 使用debug模是觀看你的pattern 設定
      vi /etc/logstash/logstash.yml
      修改 log.level:debug 
 存檔請下指令   
-    :wq
+     :wq
 
 ![](Image 7.png)
 
