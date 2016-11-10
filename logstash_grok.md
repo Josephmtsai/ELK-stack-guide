@@ -3,6 +3,12 @@
 請參考   
 https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
 
+簡單對存入進去es的資料做一些講解    
+* index => DB
+* type => Table
+* document => 剩下的檔案
+![](1-oP20tJyA_eDOycJPyDYo2A.png)
+
 基礎 由 三塊組合而成
 * input    
 * filter    
@@ -43,9 +49,16 @@ https://grokdebug.herokuapp.com/
 http://grokconstructor.appspot.com/do/match
 
 >[@metadata][beat] 這個是從你的filebeat 設定檔案的index 來的 他可以取不同的名子 **切記要小寫**    
->grok 代表他會match什麼樣的條件 會依照match的順序 
->break_on_match => true 代表只要符合他就會跳掉
->
+>grok 代表他會match什麼樣的條件 會依照match的順序    
+>break_on_match => true 代表只要符合他就會跳掉    
+>%{TIMESTAMP_ISO8601:logDate}  TIMESTAMP_ISO8601 代表他內建的條件 : 後面是你想要的欄位名稱    
+>%{POSINT:processId:int} 最後可以指定他的型態    
+>(?&lt;logger>[A-Z\-a-z .]+) 如果想自定pattern 格式 可以透過 [內的regular expression]去撰寫    
+
+
+基本設定
+
+
 
       filter {
           if  [@metadata][beat] =~ "188bet"   {
