@@ -54,8 +54,10 @@ http://grokconstructor.appspot.com/do/match
 >%{TIMESTAMP_ISO8601:logDate}  TIMESTAMP_ISO8601 代表他內建的條件 : 後面是你想要的欄位名稱    
 >%{POSINT:processId:int} 最後可以指定他的型態    
 >(?&lt;logger>[A-Z\-a-z .]+) 如果想自定pattern 格式 可以透過 [內的regular expression]去撰寫    
->mutate => 可以將你的欄位移除 或是轉換型態   
+>mutate => 可以將你的欄位移除 或是轉換型態   ex: remove_field ,remove_tag
 >GREEDYDATA => 剩餘資料全部變成此欄位
+>
+
 * tag:可以用來搜尋 : 可以透過 動態的方法 加入tag
 
       mutate {
@@ -135,19 +137,16 @@ http://grokconstructor.appspot.com/do/match
 #Output
 >host =>如果是cluster 可以打所有SERVER 他會自動sync
 >index => ww 是BY week
-
+>host => 可以傳入單一data node or 全部的data node 他會自動作sync up
 
 
         output {
           elasticsearch {
-            hosts => ["http://172.16.49.166:9200"]
+            hosts => ["http://xxx.xx.xxx.xx:9200"]
             index => "%{[@metadata][beat]}-%{+xxxx.ww}"
             document_type => "%{[@metadata][type]}"
            }
         }
 
 
-更詳細的Pattern (188)
-
-https://docs.google.com/spreadsheets/d/1fJVNxEt8sxeC78p-XqAZyqQBn9n6p4CYE6zi5IagkF8/edit#gid=0
 
