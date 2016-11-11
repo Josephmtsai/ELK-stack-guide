@@ -19,7 +19,7 @@
 
 `systemctl start kibana`   
 理論上在 就可以看到畫面
->http://172.16.49.166:5601/
+>http://172.16.xx.xxx:5601/
 
 ![](Image 17.png)
 ##kibana 舊版本設定
