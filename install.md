@@ -3,6 +3,7 @@ Please Use SSH and Use Root to Login and Install
 
 **Please know That Logstash and ElasticSearch Should not install in the same server, they need CPU for I/O**
 
+**Please know that this is for no network using**
 
 ## Install of Logstash
     cd /tmp
