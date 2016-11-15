@@ -11,5 +11,5 @@
 * [3. Logstash Grok Pattern 教學](logstash_grok.md)
 * [4. Kibana 使用](Kibana_Using.md)
    * [Kibana Index Setting](Kibana_index.md)
-   * Kibana Search Setting
+   * [Kibana Search Setting](kibana_search_setting.md)
 
