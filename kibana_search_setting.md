@@ -16,3 +16,27 @@ Please go to Discover Tab first
 
 ![](Image 23.png)
 
+可以參考此URL:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html
+
+
+下面為範例:
+>must:代表一定都要符合
+>must_not: 代表一定不要復合
+>should 代表只要符合最低的目標就可以
+
+    "bool" : {
+          "must" : {
+            "term" : { "user" : "kimchy" }
+          },
+          "must_not" : {
+            "range" : {
+              "age" : { "from" : 10, "to" : 20 }
+            }
+          },
+          "should" : [
+            { "term" : { "tag" : "wow" } },
+            { "term" : { "tag" : "elasticsearch" } }
+          ],
+          "minimum_should_match" : 1
+        }
