@@ -2,7 +2,7 @@
 
 Please go to Discover Tab first
 
-## Save Search 
+## Search Guide
 
 一開始你需要存一個簡易的Search 你可以透過左側的 欄位 去加上你想要顯示的欄位 
 
@@ -39,4 +39,40 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-q
             { "term" : { "tag" : "elasticsearch" } }
           ],
           "minimum_should_match" : 1
+        }    
+        
+        
+此為完整範例:
+
+      {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "type": {
+                  "query": "feature"
+                }
+              }
+            }
+          ],
+          "must_not": [
+            {
+              "match": {
+                "featureResult": {
+                  "query": "InProgress"
+                }
+              }
+            }
+          ]
         }
+      }     
+
+
+##Save Search
+當你存好後可以在此處看到你的Save 設定
+![](Image 19.png)  
+
+
+
+![](Image 25.png)
+
