@@ -68,6 +68,8 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-q
       }     
 
 
+
+
 ##Save Search
 當你存好後可以在此處看到你的Save 設定
 ![](Image 19.png)  
