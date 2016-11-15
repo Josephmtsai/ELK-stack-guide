@@ -26,5 +26,8 @@
 * https://grokdebug.herokuapp.com/
 * https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html
 * http://christophe.vandeplas.com/2014/06/setting-up-single-node-elk-in-20-minutes.html
+* http://blog.91app.com/use-elk-to-process-system-log/
+* https://wsgzao.github.io/post/elk/
+* http://www.evanlin.com/using-logstash-elsticsearch-and-kibana/
 
 Create by joseph
