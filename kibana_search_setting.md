@@ -74,7 +74,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-q
 
 ![](Image 28.png)    
 
-詳細的說明可以在Kibana上面找到
+詳細的說明可以在Kibana上面找到 或是參考
+
+https://www.elastic.co/guide/en/beats/packetbeat/current/kibana-queries-filters.html
 ![](Image 29.png)
 
 ##Save Search
