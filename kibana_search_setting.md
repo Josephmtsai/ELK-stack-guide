@@ -2,7 +2,7 @@
 
 Please go to Discover Tab first
 
-## Search Guide
+## Search Guide (Base on Filter)
 
 一開始你需要存一個簡易的Search 你可以透過左側的 欄位 去加上你想要顯示的欄位 
 
@@ -69,6 +69,13 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-q
 
 
 
+## Search Guide (Base on Search Bar)
+另外一種搜尋方法是直接透過搜尋的方法去找 可以直接在框框內打關鍵字   
+
+![](Image 28.png)    
+
+詳細的說明可以在Kibana上面找到
+![](Image 29.png)
 
 ##Save Search
 當你存好後可以在此處看到你的Save 設定
