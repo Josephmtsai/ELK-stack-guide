@@ -77,3 +77,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-q
 ![](Image 25.png)
 **點下編輯後可以看到你存的設定 以及要顯示的欄位**   
 ![](Image 26.png)
+
+# Export Setting 
+>**你可以全部匯出 或是 先把Search > Visualize >Dashboard 依照順序匯出 備份**
+
+
+![](Image 27.png)
