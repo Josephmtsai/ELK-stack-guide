@@ -9,5 +9,5 @@
    * [2.3 Config Of Kibana](config_of_kibana.md)
    * [2.4 Plugin Install Of All Module](plugin_install_of_all_module.md)
 * [3. Logstash Grok Pattern 教學](logstash_grok.md)
-* 4. Kibana 使用
+* [4. Kibana 使用](Kibana_Using.md)
 
