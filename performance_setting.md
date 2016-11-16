@@ -6,7 +6,7 @@
 *  Mutipleline in logstash input   
 
 >優點：統一input 可以開mutithread      
->缺點：如果量很大可能會影響logstash cpu 用量 
+>缺點：如果量很大可能會影響logstash cpu 用量 ，input 從filebeat 來還是需要一行一行合併　可能會造成效能問題
 
       input {
          beats {
@@ -35,7 +35,15 @@
                 }
           }
         }
-* Mutipleline in fielbeat
+* Mutipleline in filebeat    
+
+>優點:　各自由filebeat　送log 到 logstash , 減少logstash cpu     
+>缺點：可能會影響原本server cpu,mem
+
+**下列設定是by各個要撈的檔案　**
+
+
+
 
         - input_type: log
           paths:
