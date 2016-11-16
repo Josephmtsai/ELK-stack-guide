@@ -13,4 +13,5 @@
    * [4.1 Kibana Index Setting](Kibana_index.md)
    * [4.2 Kibana Search Setting](kibana_search_setting.md)
 * [Performance Setting](performance_setting.md)
+* 5. FileBeat Config
 
