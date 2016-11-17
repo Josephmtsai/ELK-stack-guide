@@ -58,9 +58,12 @@ Server : 18 (other team have total 20 or more)
 >30 scends : 2000~4000  ,lost 90%   
 >we have 3 team to deploy the 4 logstash server with 2 es server.
 
+>Server filebeat have 300 mem, seems stock in server side 
 
 ###using Mutipleline in filebeat   
 
 >30 scends : 30000
+
+>Server filebeat have 20 mem, s
 ![](Image 32.png)
 
