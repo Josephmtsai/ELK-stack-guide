@@ -68,7 +68,8 @@
 
     logging.to_files: true
     logging.files:
-
+       path: L:\Beats\filebeat
+       name: filebeat
 
 如果一開始不確定INPUT是什麼 可以透過設定 FILE 去觀察是否正確
 
