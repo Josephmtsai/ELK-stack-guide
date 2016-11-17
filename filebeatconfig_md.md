@@ -70,4 +70,26 @@
     logging.files:
 
 
+如果一開始不確定INPUT是什麼 可以透過設定 FILE 去觀察是否正確
 
+      output.file:
+        # Boolean flag to enable or disable the output module.
+        enabled: true
+
+        # Path to the directory where to save the generated files. The option is
+        # mandatory.
+        path: "你的路徑"
+
+        # Name of the generated files. The default is `filebeat` and it generates
+        # files: `filebeat`, `filebeat.1`, `filebeat.2`, etc.
+        filename: filebeat
+
+        # Maximum size in kilobytes of each file. When this size is reached, and on
+        # every filebeat restart, the files are rotated. The default value is 10240
+        # kB.
+        #rotate_every_kb: 10000
+
+        # Maximum number of files under path. When this number of files is reached,
+        # the oldest file is deleted and the rest are shifted from last to first. The
+        # default is 7 files.
+        number_of_files: 7
