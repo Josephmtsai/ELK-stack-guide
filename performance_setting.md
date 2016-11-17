@@ -1,5 +1,5 @@
 # Performance Setting
-
+**發現 Mutiline不能混用 只能挑選下面一種修改 不然會有檔案跟內容錯誤的問題**
 
 ##Input log with Mutiline
 
