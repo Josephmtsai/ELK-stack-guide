@@ -9,7 +9,6 @@ Please Use SSH and Use Root to Login and Install
 ```
 cd /tmp
 rpm -ivh logstash-5.0.0.rpm
-
 ```
 
 ## Install of ElasticSearch
@@ -31,6 +30,19 @@ rpm -ivh kibana-5.0.0-x86_64.rpm
 > > rpm -e logstash 代表 移除套件
 
 ![](2.png)
+
+
+
+## Upgrade of ElasticSearch
+
+```
+cd /tmp
+rpm -Uvh elasticsearch-5.0.0
+```
+
+>Please Make sure the Kibana is the Same version of ElasticSearch
+>ElasticSearch 如果沒辦法啟動 請先檢查 /var/log/ElasticSearch 裡面的log
+>接著檢查設定檔是否有設定需要調整
 
 
 
