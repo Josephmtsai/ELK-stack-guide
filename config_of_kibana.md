@@ -13,7 +13,7 @@
 >server.port:5601
 >server.host: 設定server ip
 >elasticsearch.url: 如果不是同一台請修改 url   
-![](Image 16.png)
+need image
 
 `:wq` save file
 
