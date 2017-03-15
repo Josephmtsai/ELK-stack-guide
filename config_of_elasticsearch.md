@@ -53,7 +53,7 @@ EX: /es_data
 
 成功的話可以透過
 
-/var/log/elasticserach 看到log 或是 http://172.16.49.166:9200/ 看到輸出的結果
+/var/log/elasticserach 看到log 或是 http://172.16:9200/ 看到輸出的結果
 
 ![](Image 13.png)
 
