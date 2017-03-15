@@ -21,7 +21,7 @@ logstash 在啟動的時候會在去將這些檔案合併，所以請依照數�
 
 有問題可以從log 看
 
-![](Image 10.png)
+need image
 #input 
 
 >mutiline 如果沒有放在這個區域他沒辦法啟動 多執行緒去判別
