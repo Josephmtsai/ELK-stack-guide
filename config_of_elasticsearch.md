@@ -55,7 +55,7 @@ EX: /es_data
 
 /var/log/elasticserach 看到log 或是 http://172.16:9200/ 看到輸出的結果
 
-![](Image 13.png)
+need image
 
 ##Elasticsearch Cluster 設定
 
