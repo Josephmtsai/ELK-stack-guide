@@ -90,7 +90,7 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 ##Elasticsearch Indice
 
 
-`http://172.16.49.166:9200/_cat/indices`
+`http://172.16.:9200/_cat/indices`
 
 ![](Image 15.png)
 
