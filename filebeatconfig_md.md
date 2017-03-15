@@ -64,7 +64,7 @@
 
       loadbalance: true
 
-      index: "logstash-188bet"
+      index: "logstash-"
 
     logging.to_files: true
     logging.files:
