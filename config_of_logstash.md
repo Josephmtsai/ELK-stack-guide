@@ -23,7 +23,7 @@
 >> 使用這個結構 10. input  && 30.output 是一定必要的檔案 代表輸出跟輸入   請先放入設定的檔案 詳細在logstash 設定會寫
 
 
-![](Image 10.png)
+
 ## logstash 預設會先抓/etc/logstash/logstash.yml
 
 如果不知道的話 可以用查看他預設的路徑
