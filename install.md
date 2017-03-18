@@ -48,6 +48,12 @@ rpm -Uvh elasticsearch-5.0.0
 >ElasticSearch 如果沒辦法啟動 請先檢查 /var/log/ElasticSearch 裡面的log
 >接著檢查設定檔是否有設定需要調整
 
+###五版以後Elastic & Kibana 必須一起升級
+
+
+
+
+
 
 
 
