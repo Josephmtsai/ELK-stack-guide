@@ -1,8 +1,5 @@
 #Logstash Pattern 簡單教學
 
-請參考   
-https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
-https://qbox.io/blog/parsing-logs-using-logstash?utm_source=qbox.io&utm_medium=article&utm_campaign=logstash-5-0-monitoring-api-node-plugin-stats-hot-threads
 
 簡單對存入進去es的資料做一些講解    
 * index => DB
@@ -15,7 +12,7 @@ https://qbox.io/blog/parsing-logs-using-logstash?utm_source=qbox.io&utm_medium=a
 * filter    
 * output     
 
-參考圖為上方網址
+參考圖為最下方網址
 ![](/assets/Sameple.png)
 
 
