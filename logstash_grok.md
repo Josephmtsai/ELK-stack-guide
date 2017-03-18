@@ -15,12 +15,17 @@ https://qbox.io/blog/parsing-logs-using-logstash?utm_source=qbox.io&utm_medium=a
 * filter    
 * output     
 
+參考圖為上方網址
+![](/assets/Sameple.png)
+
 
 因為各個Team 的filter條件大部分都不一樣 所以透過編號的方法 讓他區分開
 
 logstash 在啟動的時候會在去將這些檔案合併，所以請依照數字排序 不要讓config出問題
 
 有問題可以從log 看
+
+
 
 
 
