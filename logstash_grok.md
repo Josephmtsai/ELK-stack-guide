@@ -19,14 +19,13 @@ https://qbox.io/blog/parsing-logs-using-logstash?utm_source=qbox.io&utm_medium=a
 ![](/assets/Sameple.png)
 
 
-因為各個Team 的filter條件大部分都不一樣 所以透過編號的方法 讓他區分開
+基本上logstash 支援將各個檔案合併的方法，但是需要透過編號的方法 讓他區分開
 
 logstash 在啟動的時候會在去將這些檔案合併，所以請依照數字排序 不要讓config出問題
 
 有問題可以從log 看
 
-
-
+>為什麼需要這樣呢? 因為logstash 可以針對不同的index 執行不同的parsing,因為這塊非常消耗資源所以在寫的時候要非常小心
 
 
 ![](/assets/Image 10.png)
