@@ -163,4 +163,8 @@ Parsing JSON:http://stackoverflow.com/questions/33937936/how-to-parse-json-in-lo
 
 替換@timestam:http://stackoverflow.com/questions/20401663/logstash-replace-timestamp-with-syslog-date    
 
+https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
+基礎介紹:https://qbox.io/blog/parsing-logs-using-logstash?utm_source=qbox.io&utm_medium=article&utm_campaign=logstash-5-0-monitoring-api-node-plugin-stats-hot-threads
+效能介紹https://www.elastic.co/blog/do-you-grok-grok
+
 
