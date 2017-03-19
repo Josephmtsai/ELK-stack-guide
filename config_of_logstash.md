@@ -53,6 +53,12 @@ EX: 你想要讓logstash 使用debug模是觀看你的pattern 設定
 或是從`top -u logstash` 查看service是否起來
 
 ## logstash auto reload config
+
+>主要是在 ExecStart=/usr/share/logstash/bin/logstash "-r"
+
+>-r 代表auto reloading config 當你config 修改過後就不用每次都需要重開logstash
+
+
 ```
 vi /etc/systemd/system/logstash.service
 ```
