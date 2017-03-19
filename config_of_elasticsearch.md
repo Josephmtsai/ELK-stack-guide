@@ -109,10 +109,11 @@ http://tekibrain.blogspot.tw/2014/08/ubuntu-elasticsearch-cluster.html
 `http://172.16.:9200/_cat/indices`
 
 
-
 * yellow: 代表沒有備份到cluster (如果有cluster沒有備份過去請recovery index 或是稍微等待一下)
 * green: 代表cluster裡面所有node都有
 * red: 代表有問題 需要recovery
+
+![](/assets/Image 15.png)
 `http://172.16.9200/__recovery?logstash-2016.43`
 
 ##Elasticsearch 舊版本設定 2.xx
