@@ -38,10 +38,16 @@ EX: /es_data
 >> discovery.zen.ping.multicast.enabled: false
 
 ![](Image 14.png)
+>存檔記得使用下列指令
 `:wq`   
 
+##Elasticsearch JVM Membery
 
 
+```
+vi /etc/elasticsearch/jvm.options
+```
+![](/assets/Image 38.png)
 >>>>過去舊版本的用法 (Heap size需要設定 新版本位置可能相同)    
 `vi /etc/sysconfig/elasticsearch`   
   Your Elasticsearch data directory
@@ -56,6 +62,9 @@ EX: /es_data
 /var/log/elasticserach 看到log 或是 http://172.16:9200/ 看到輸出的結果
 
 ![](/assets/Image 13.png)
+
+
+
 
 
 ##Elasticsearch Cluster 設定
