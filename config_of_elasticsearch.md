@@ -47,7 +47,11 @@ EX: /es_data
 ```
 vi /etc/elasticsearch/jvm.options
 ```
+
 ![](/assets/Image 38.png)
+
+
+
 >>>>過去舊版本的用法 (Heap size需要設定 新版本位置可能相同)    
 `vi /etc/sysconfig/elasticsearch`   
   Your Elasticsearch data directory
