@@ -43,7 +43,9 @@ EX: /es_data
 
 ##Elasticsearch JVM Membery
 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html
 
+主要是設定es 啟動的時候最多跟最少可以使用多少memory
 ```
 vi /etc/elasticsearch/jvm.options
 ```
