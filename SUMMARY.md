@@ -14,5 +14,5 @@
   * [4.2 Kibana Search Setting](kibana_search_setting.md)
 * [5. FileBeat Config](filebeatconfig_md.md)
 * [File Beat Performance Setting](performance_setting.md)
-* Logstash Performance Setting
+* [Logstash Performance Setting](logstash-performance-setting.md)
 
