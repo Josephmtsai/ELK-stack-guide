@@ -29,8 +29,14 @@ match => {"message" => "%{TIMESTAMP_ISO8601:logDate} (\[%{POSINT:processId:int}\
 ![](/assets/Screen Shot 2016-09-27 at 14.02.29.png)
 >這張圖期實我也看了很久 這張意思是說
 
-1. 當你一開始就失敗的話 因為GROK並不會中斷處理 所以就算在一開始失敗 他還是會跑到最後面才會認定失敗 等於浪
+> **當你一開始就失敗的話 因為GROK並不會中斷處理 所以就算在一開始失敗 他還是會跑到最後面才會認定失敗 等於浪費非常多時間 ，BLOG 上面是寫說有可能比成功match slow 6倍**
 
-費非常多時間 ，BLOG 上面是寫說有可能比成功match slow 6倍
 
-2. 
+解決方法 BLOG 上面是提到加上^ 跟$ 我們都知道這是regular expression的開始以及結束字元 這可以加速他判斷
+
+![](/assets/Screen Shot 2016-09-27 at 14.06.53.png)
+
+>所以這樣可以增進他馬上判斷錯誤的效能 減少時間耗損
+
+
+
