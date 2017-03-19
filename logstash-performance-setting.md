@@ -10,7 +10,7 @@ https://www.elastic.co/blog/do-you-grok-grok
 1. Grok 是根據regular expression 來的 所以寫法也會影響效能
 
 2. _geoip_lookup_failure 這個代表示沒有match 到任何的正規表示式 (代表) 他會將你所有的MATCH 跑過一輪才會結束 ，如下面的例子 他會執行五次MATCH 才會判斷 這個是非常浪費效能的事情
- 
+![](/assets/Image 40.png) 
 
 ```
 grok {
@@ -24,4 +24,7 @@ match => {"message" => "%{TIMESTAMP_ISO8601:logDate} (\[%{POSINT:processId:int}\
 
 ```
 
-![](/assets/Image 40.png)
+**Beware of the performance impact when grok fails to match**
+
+![](/assets/Screen Shot 2016-09-27 at 14.02.29.png)
+>這張圖期實我也看了很久 這張意思是說
