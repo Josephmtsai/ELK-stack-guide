@@ -13,9 +13,10 @@
 >server.port:5601
 >server.host: 設定server ip
 >elasticsearch.url: 如果不是同一台請修改 url   
-need image
-
 `:wq` save file
+![](/assets/Image 16.png)
+
+
 
 `systemctl start kibana`   
 理論上在 就可以看到畫面
