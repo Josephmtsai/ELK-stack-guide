@@ -28,3 +28,9 @@ match => {"message" => "%{TIMESTAMP_ISO8601:logDate} (\[%{POSINT:processId:int}\
 
 ![](/assets/Screen Shot 2016-09-27 at 14.02.29.png)
 >這張圖期實我也看了很久 這張意思是說
+
+1. 當你一開始就失敗的話 因為GROK並不會中斷處理 所以就算在一開始失敗 他還是會跑到最後面才會認定失敗 等於浪
+
+費非常多時間 ，BLOG 上面是寫說有可能比成功match slow 6倍
+
+2. 
