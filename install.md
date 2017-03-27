@@ -35,6 +35,17 @@ rpm -ivh kibana-5.0.0-x86_64.rpm
 
 ![](2.png)
 
+## Upgrade of Logstash
+```
+cd /tmp
+rpm -Uvh logstash-5.2.2.rpm
+```
+
+新增完成後
+
+會有一個rpmnew 檔案 需要比較設定是否跟舊版本相同
+![](/assets/Image 60.png)
+
 
 
 ## Upgrade of ElasticSearch
