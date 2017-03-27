@@ -24,6 +24,7 @@ https://www.elastic.co/downloads/x-pack
 
 
 安裝好了後重啟兩個service就會在畫面上面看到 這些設定
+他需要一些時間啟動
 ![](/assets/Image 57.png)
 ![](monitoring.png)
 
