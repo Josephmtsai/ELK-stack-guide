@@ -24,6 +24,7 @@ https://www.elastic.co/downloads/x-pack
 
 
 安裝好了後重啟兩個service就會在畫面上面看到 這些設定
+![](/assets/Image 57.png)
 ![](monitoring.png)
 
 ## 離線安裝設定
