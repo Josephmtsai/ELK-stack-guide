@@ -52,7 +52,8 @@
 
 
     filebeat.registry_file: "C:/programdata/registry"
-
+    ignore_older: 12h
+    #加這塊主要是因為 如果一直進不去SERVER 要有機制讓他放棄不然他會一直占用你的記憶體
 
     output.logstash:
 
