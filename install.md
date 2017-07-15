@@ -28,6 +28,8 @@ https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.h
 ###put the config in CustomConfig folder
 
 >save as default.conf 
+
+
 ```
 input {
 
@@ -56,6 +58,8 @@ output {
 }
 
 ```
+
+
 register as service
 
 Download nssm
