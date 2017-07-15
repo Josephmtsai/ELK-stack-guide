@@ -85,6 +85,27 @@ nssm start logstash
 
 ## Install of Filebeat
 
+### Extract Folder
+
+### Create bat file 
+
+>remove old version then install.bat
+
+```
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "set-executionpolicy unrestricted"
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "&{stop-service filebeat}"
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "& 'E:\filebeat-5.4.3-windows-x86_64\uninstall-service-filebeat.ps1'"
+
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "&{E:\filebeat-5.4.3-windows-x86_64\install-service-filebeat.ps1}"
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "Set-Service filebeat -startuptype "manual""
+%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe -Command "&{start-service filebeat}"
+
+cd E:\filebeat-5.4.3-windows-x86_64
+E:
+
+pause
+```
+
 
 
 # Linux Version
