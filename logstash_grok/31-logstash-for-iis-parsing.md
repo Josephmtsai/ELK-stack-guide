@@ -7,6 +7,18 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 
 ##實做對應到logstash parsing進去elasticsearch
 
+會得到這樣
+
+>
+
+
+###先在filebeat設定file folder
+>透過給予他一個客製欄位 判斷它需要parsing log
+![](/assets/fileBeatConfig.png)
+
+
+### logstash pattern
+
 
 https://grokdebug.herokuapp.com/
 
