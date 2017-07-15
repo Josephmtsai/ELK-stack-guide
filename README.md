@@ -2,7 +2,7 @@
 
 ## Update for Windows and linux version install and introduce
 
-
+*  Base on Window and linux install
 *  Base on Centos AND RPM install
 *  Base on FileBeat Setting
 
