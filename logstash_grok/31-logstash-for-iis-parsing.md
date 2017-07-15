@@ -9,7 +9,7 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 
 會得到這樣
 
->[@metadata][beat] ==你設定的index
+>[@metadata][beat] ==你從filebeat設定的index (預設小寫)
 
 ```
 filter {
