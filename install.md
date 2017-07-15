@@ -27,6 +27,13 @@ Extract folder
 
 register as service
 
+Download nssm
+
+http://nssm.cc/download
+
+
+
+
 # Linux Version
 
 Please Use SSH and Use Root to Login and Install
