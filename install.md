@@ -31,6 +31,10 @@ Download nssm
 
 http://nssm.cc/download
 
+**cmd as admin **
+
+
+![](/assets/logstash service.png)
 
 
 
