@@ -26,6 +26,8 @@ https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.h
 ###Extract folder 
 
 ###put the config in CustomConfig folder
+
+>save as default.conf 
 ```
 input {
 
@@ -34,7 +36,24 @@ input {
         }
 }
 
+filter {
+	
+		grok {
+			match => { "message" => "%{TIMESTAMP_ISO8601:log_timestamp}"}
+		}
+		date {
+			match => [ "log_timestamp", "ISO8601"]
+			target => "@log_timestamp"
+		}
+}
 
+output {
+  elasticsearch {
+    hosts => ["http://localhost:9200"]
+    index => "logstash-%{+xxxx.ww}"
+    document_type => "%{[@metadata][type]}"
+   }
+}
 
 ```
 register as service
