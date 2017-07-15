@@ -23,8 +23,20 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html
 https://www.elastic.co/guide/en/beats/libbeat/current/logstash-installation.html
 https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html
 
-Extract folder 
+###Extract folder 
 
+###put the config in CustomConfig folder
+```
+input {
+
+   beats {
+                port => 5044
+        }
+}
+
+
+
+```
 register as service
 
 Download nssm
@@ -33,7 +45,7 @@ http://nssm.cc/download
 
 **cmd as admin **
 
-
+nssm install logstash "E:\Logstash\logstash-5.5.0\bin\logstash.bat" "-f :\Logstash\logstash-5.5.0\CustomConfig -r "
 ![](/assets/logstash service.png)
 
 
