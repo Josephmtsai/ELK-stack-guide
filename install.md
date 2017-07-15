@@ -82,6 +82,11 @@ nssm start logstash
 
 ![](/assets/logstashlog.png)
 
+
+## Install of Filebeat
+
+
+
 # Linux Version
 
 Please Use SSH and Use Root to Login and Install
