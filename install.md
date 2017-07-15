@@ -14,6 +14,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html
 
 ![](/assets/es1.png)
 
+![](/assets/es2.png)
 # Linux Version
 
 Please Use SSH and Use Root to Login and Install
