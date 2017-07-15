@@ -62,6 +62,9 @@ https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.h
 
 ```
 
+![](/assets/logstash config.png)
+
+
 
 register as service
 
@@ -74,7 +77,10 @@ http://nssm.cc/download
 nssm install logstash "E:\Logstash\logstash-5.5.0\bin\logstash.bat" "-f :\Logstash\logstash-5.5.0\CustomConfig -r "
 ![](/assets/logstash service.png)
 
+nssm start logstash
 
+
+![](/assets/logstashlog.png)
 
 # Linux Version
 
