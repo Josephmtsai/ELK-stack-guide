@@ -19,6 +19,14 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html
 ![](/assets/es3.png)
 
 ##Install of Logstash
+
+https://www.elastic.co/guide/en/beats/libbeat/current/logstash-installation.html
+https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html
+
+Extract folder 
+
+register as service
+
 # Linux Version
 
 Please Use SSH and Use Root to Login and Install
