@@ -172,6 +172,11 @@ add_field => [ "[geoip][coordinates]", "%{[geoip][latitude]}" ]
 
 ###打開service後 去kibana看 就可以看到結果
 
+![](/assets/kibana result.png)
+
+
+![](/assets/kibana result 2.png)
+
 https://grokdebug.herokuapp.com/
 
 
