@@ -106,8 +106,13 @@ E:
 pause
 ```
 
+###Edit the filebeat.yml
+
+>Make sure all the setting is correct ,see the Chapt 5
+![](/assets/logstashyml.png)
 
 
+Then start the service 
 # Linux Version
 
 Please Use SSH and Use Root to Login and Install
