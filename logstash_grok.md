@@ -88,7 +88,7 @@ http://grokconstructor.appspot.com/do/match
 完整範例如下:
 
       filter {
-          if  [@metadata][beat] =~ "188bet"   {
+          if  [@metadata][beat] =~ ""   {
 
               grok {		
                   break_on_match => true
