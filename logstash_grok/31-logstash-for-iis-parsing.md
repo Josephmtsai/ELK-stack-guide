@@ -8,6 +8,10 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 ##實做對應到logstash parsing進去elasticsearch
 
 
+https://grokdebug.herokuapp.com/
+
+
+![](/assets/grokDebug.png)
 
 reference:
 
