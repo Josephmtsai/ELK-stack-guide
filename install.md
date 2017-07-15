@@ -9,9 +9,10 @@ JAVA_HOME= "C:\Program Files\Java\jre1.8.0_131"
 Path += "C:\Program Files\Java\jre1.8.0_131\bin"
 ```
 ##Install of ElasticSearch
+>install guide 
+https://www.elastic.co/guide/en/elasticsearch/reference/current/windows.html
 
-
-
+![](/assets/es1.png)
 
 # Linux Version
 
