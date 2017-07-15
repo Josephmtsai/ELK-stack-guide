@@ -1,7 +1,15 @@
 # File Prepare
+# Window Version
+
+
+## Download file
 
 
 
+
+
+
+#Linux Version
 ## Download file
 
 * [https://www.elastic.co/downloads/elasticsearch](https://www.elastic.co/downloads/elasticsearch)
