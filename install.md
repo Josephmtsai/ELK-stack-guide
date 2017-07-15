@@ -1,3 +1,15 @@
+# Windows Version
+
+## Install of JAVA 
+Add Envirement Vars
+> please make sure the folder with server and JVM DLL
+```
+JAVA_HOME= "C:\Program Files\Java\jre1.8.0_131\bin"
+```
+
+
+# Linux Version
+
 Please Use SSH and Use Root to Login and Install
 ```
 sftp account:password@ip 22
