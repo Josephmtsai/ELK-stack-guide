@@ -111,6 +111,18 @@ pause
 >Make sure all the setting is correct ,see the Chapt 5
 ![](/assets/logstashyml.png)
 
+## Install of Kibana
+
+Extract folder
+
+go to current folder
+
+run cmd
+
+```
+bin\kibana.bat
+```
+
 
 Then start the service 
 # Linux Version
