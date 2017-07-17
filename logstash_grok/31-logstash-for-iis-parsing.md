@@ -18,7 +18,7 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 >[@metadata][beat] ==你從filebeat設定的index (預設小寫)
 
 ```
-filter {
+
 if [@metadata][beat] =~ "" and [fields][iisfield] {
 
 grok {
