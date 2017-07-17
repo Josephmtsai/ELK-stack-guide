@@ -19,154 +19,92 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 
 ```
 filter {
-if [@metadata][beat] =~ "" and [fields][iisfield] {
+    if [@metadata][beat] =~ "188bet" and [fields][iisfield] {
 
-grok {
-match => [ "message", "%{TIMESTAMP_ISO8601:timestamp} %{NOTSPACE:sitename} %{WORD:httpMethod} %{URIPATH:Method} %{NOTSPACE:queryString} %{NUMBER:port} %{NOTSPACE:requestUserName} %{IPORHOST:clientIP} %{NOTSPACE:sourceUseragent} %{NOTSPACE:refererURL} %{NUMBER:response:int} %{NUMBER:status:int} %{NUMBER:sc-substatus:int} %{NUMBER:responseTime:int}" ]
-}
-geoip {
-source => "clientIP"
-target => "geoip"
-add_tag => [ "iis-geoip" ]
-}
-useragent {
-source => "sourceUseragent"
-target => "useragent"
-}
-# customize timestamp
-date {
-#timezone => "America/Barbados"
-match => ["logDate", "ISO8601"]
-target => "@timestamp"
-}
-mutate {
-convert => [ "[geoip][coordinates]", "float"]
-remove_field => [ "PERFORMANCE","logDate","Feature" ,"request","messagebody" ,"describe","requestMessage","performanceMessages" ]
-remove_tag => [ "beats_input_codec_plain_applied", "beats_input_codec_multiline_applied" ]
-}
-if [apiPath]{
-mutate {
-add_field => { "Method" => "%{apiPath}" }
-}
-}
-if "uk" in [type] {
-mutate {
-replace => {
-"index_prefix" => "%{[@metadata][beat]}uk-"
-}
-}
-}
-if [Method]{
-mutate {
-add_tag => [ "%{Method}" ]
-}
-}
-if [featureResult]{
-mutate {
-add_tag => [ "%{featureResult}" ]
-}
-}
-if "membersite" in [type]{
-mutate {
-add_field => { "module" => "membersite" }
-}
-}
-if "mobilesite" in [type]{
-mutate {
-add_field => { "module" => "mobile" }
-}
-}
-if "app" in [type]{
-mutate {
-add_field => { "module" => "mobileapp" }
-}
-}
-if "mobileintegrationspi" in [type]{
-mutate {
-add_field => { "module" => "mobileappspi" }
-}
-}
-if "fsbtechspi" in [type]{
-mutate {
-add_field => { "module" => "fsbtechspi" }
-}
-}
-if "affiliateportal" in [type]{
-mutate {
-add_field => { "module" => "affiliateportal" }
-}
-}
-if "rtms" in [type]{
-mutate {
-add_field => { "module" => "rtms" }
-}
-}
-if "performance" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "performance"
-"type" => "performance"
-}
-}
-}
-if "iis" in [type]{
-mutate {
-replace => {
-"[@metadata][type]" => "iis"
-"type" => "iis"
-}
-}
-}
-if "feature" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "feature"
-"type" => "feature"
-}
-}
-}
-if "request" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "request"
-"type" => "request"
-}
-}
-}
-if "server" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "server"
-"type" => "server"
-}
-}
-}
-if "error" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "error"
-"type" => "error"
-}
-}
-}
-if "all" in [type] {
-mutate {
-replace => {
-"[@metadata][type]" => "all"
-"type" => "all"
-}
-}
-}
-if [clientIP]{
-geoip {
-source => "clientIP"
-target => "geoip"
-#database => "/etc/logstash/GeoLite2-City.mmdb"
-add_field => [ "[geoip][coordinates]", "%{[geoip][longitude]}" ]
-add_field => [ "[geoip][coordinates]", "%{[geoip][latitude]}" ]
-}
-}
-}
+        grok {
+			break_on_match => true			
+            match => { "message" => "%{TIMESTAMP_ISO8601:logDate} %{NOTSPACE:sitename} %{WORD:httpMethod} %{URIPATH:Method} %{NOTSPACE:queryString} %{NUMBER:port} %{NOTSPACE:requestUserName} %{IPORHOST:clientIP} %{NOTSPACE:sourceUseragent} %{NOTSPACE:refererURL} %{NUMBER:response:int} %{NUMBER:status:int} %{NUMBER:sc-substatus:int} %{NUMBER:responseTime:int}" }
+        }
+       
+        useragent {
+            source => "sourceUseragent"
+            target => "useragent"
+        }
+        #customize timestamp
+        date {
+            timezone => "America/Anguilla"
+            match => ["logDate", "ISO8601"]
+            target => "@timestamp"
+        }
+        
+        
+        if [Method] {
+            mutate {
+                add_tag => ["%{Method}"]
+            }
+        }
+       
+        if "membersite" in [type] {
+            mutate {
+                add_field => { "module" => "membersite" }
+            }
+        }
+        if "mobilesite" in [type] {
+            mutate {
+                add_field => { "module" => "mobile" }
+            }
+        }
+        if "app" in [type] {
+            mutate {
+                add_field => { "module" => "mobileapp" }
+            }
+        }
+        if "mobileintegrationspi" in [type] {
+            mutate {
+                add_field => { "module" => "mobileappspi" }
+            }
+        }
+        if "fsbtechspi" in [type] {
+            mutate {
+                add_field => { "module" => "fsbtechspi" }
+            }
+        }
+        if "affiliateportal" in [type] {
+            mutate {
+                add_field => { "module" => "affiliateportal" }
+            }
+        }
+        if "rtms" in [type] {
+            mutate {
+                add_field => { "module" => "rtms" }
+            }
+        }
+  
+        if "iis" in [type] {
+            mutate {
+                replace => {
+                    "[@metadata][type]" => "iis"
+                    "type" => "iis"
+                }
+            }
+        }
+ 
+        if [clientIP] {
+            geoip {
+                source => "clientIP"
+                target => "geoip"
+                #database => "/etc/logstash/GeoLite2-City.mmdb"
+                add_field => ["[geoip][coordinates]", "%{[geoip][longitude]}"]
+                add_field => ["[geoip][coordinates]", "%{[geoip][latitude]}"]
+				add_tag => ["iis-geoip"]
+            }
+        }
+		mutate {
+            convert => ["[geoip][coordinates]", "float"]
+            remove_field => ["logDate"]
+            remove_tag => ["beats_input_codec_plain_applied", "beats_input_codec_multiline_applied"]
+        }
+    }
 }
 ```
 
