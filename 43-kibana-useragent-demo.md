@@ -17,4 +17,10 @@ responseTime =>回應時間
 
 #Kibana Dashboard
 
+>下表列出最耗時的method並且列出所有browser的比例以及使用數量ip
 
+![](/assets/useragent.png)
+
+>下表列出除了Chrome以及Status != 301 ,404的method以及他的browser比例
+
+![](/assets/useragent2.png)
