@@ -19,7 +19,7 @@ date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(Use
 
 ```
 filter {
-    if [@metadata][beat] =~ "188bet" and [fields][iisfield] {
+    if [@metadata][beat] =~ "" and [fields][iisfield] {
 
         grok {
 			break_on_match => true			
