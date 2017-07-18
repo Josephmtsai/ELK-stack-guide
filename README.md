@@ -9,10 +9,11 @@
 
 **Please know That Logstash and ElasticSearch Should not install in the same server, they need CPU for I/O**
 
+![](/assets/elkstack.png)
 
 ## Prepare File & JAVA install
 
-## Install of ELK
+## Install of ELK Stack
 
 ## Adjust config File
 
