@@ -1,4 +1,9 @@
-# Performance Setting
+# Performance Setting in Windows Memory High Problem
+之前有
+
+
+
+# Performance Setting in Mutiline
 **發現 Mutiline不能混用 只能挑選下面一種修改 不然會有檔案跟內容錯誤的問題**
 
 ##Input log with Mutiline
@@ -66,4 +71,7 @@ Server : 18 (other team have total 20 or more)
 
 >Server filebeat have 20 mem, s
 ![](Image 32.png)
+
+
+
 
