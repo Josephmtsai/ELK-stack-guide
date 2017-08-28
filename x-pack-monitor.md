@@ -4,7 +4,7 @@
 ![](/assets/XPACK for Logstash.png)
 >可以看到Server CPU,MEM
 ![](/assets/XPACK for Logstash2.png)
-![](/assets/XPACK for Logstash3.png)
+
 
 
 
