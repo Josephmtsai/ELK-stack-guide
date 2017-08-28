@@ -1,6 +1,43 @@
 # Performance Setting in Windows Memory High Problem
-之前有
+之前有遇過filebeat memory 越來越高的問題
 
+如圖片 開啟大約12HR後會到1.7GB
+**他會越來越高 到會造成系統問題**
+![](/assets/filebeatdefault.png)
+
+觀看了文件後
+
+https://www.elastic.co/guide/en/beats/filebeat/5.3/configuration-global-options.html
+
+有幾個設定預設是這樣
+
+**scan_frequency 預設是十秒**
+
+**filebeat.spool_size: 2048**
+
+假設問題是 你的LOG量 十秒內 超過2048 他就會Cache 在你的記憶體內，接下來都無法釋放
+
+
+所以如果 Log 量 十秒內3000筆 他就會讓記憶體卡住出不去
+
+###解決方法
+
+filebeat.spool_size: 4096 
+> 單獨設定這個就有效果 他有提示說設定這個會造成記憶體升高但是實際上沒有差異 總比你讓記憶體到幾GB好
+
+
+還有
+
+![](/assets/Load Balance Setting.png)
+
+設定load balance 假設你logstash server 有兩台
+
+**結果**
+實際上開啟12HR 後還是沒有變多多少
+![](/assets/filebeatspoolsize.png)
+
+實際比較後 發現LOG量並沒有跟設定的差太多，但是記憶體的問題已經被解決
+![](/assets/Compare result.png)
 
 
 # Performance Setting in Mutiline
