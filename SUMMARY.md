@@ -17,4 +17,5 @@
 * [File Beat Performance Setting](performance_setting.md)
 * [Logstash Performance Setting](logstash-performance-setting.md)
 * [5. FileBeat Config](filebeatconfig_md.md)
+* [X-Pack Monitor](x-pack-monitor.md)
 
