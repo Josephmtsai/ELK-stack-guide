@@ -41,7 +41,7 @@ EX: /es_data
 >存檔記得使用下列指令
 `:wq`   
 
-##Elasticsearch JVM Membery
+##Elasticsearch JVM Memory
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/heap-size.html
 
