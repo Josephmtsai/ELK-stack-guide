@@ -1,3 +1,5 @@
+
+
 #Kibana Timlion
 ![](/assets/timelion 1.png)
 ###用途
@@ -73,9 +75,11 @@
 
 **.es(),.es()** 代表了兩條線 我們可以分別看他的說明
 ````
-.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").label("currenct week login failed counting"),
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
+.label("currenct week login failed counting"),
 
-.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d").label("last week  login failed counting").title("login failed compare")
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d")
+.label("last week  login failed counting").title("login failed compare")
 ````
 >.label 可以標注你的線說明
 
@@ -87,4 +91,13 @@
 
 ## 資料加總相除的比例
 
-接著我們舉個
+接著我們舉個比較困難的例子
+
+
+
+````
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
+.divide(.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND ( featureResult:FAIL  or featureResult:SUCCESS)"))
+.multiply(100)
+.label("Current Week Login Failed Perfentage").yaxis(label="percentage")
+````
