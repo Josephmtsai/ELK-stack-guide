@@ -119,4 +119,18 @@
 
 接著舉個更難的例子
 
+````
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
+.divide(.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND ( featureResult:FAIL  or featureResult:SUCCESS)"))
+.multiply(100).label("Current Week Login Failed Perfentage"),
 
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d")
+.divide(.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND ( featureResult:FAIL  or featureResult:SUCCESS)", offset="-7d"))
+.multiply(100).label("Last Week Login Failed Perfentage")
+.title("log  failed percentage").yaxis(label="percentage")
+````
+
+>結合我們前面幾個例子就可以達到比較過去同期資料的登入失敗的百分比的資料
+
+
+![](/assets/Timelion6.png)
