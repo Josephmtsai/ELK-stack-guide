@@ -61,9 +61,12 @@
 
 ##兩條線 與過去同期七天的資料比較
 
+就如我們一開始講的.es() 代表一條線 , 可以分隔第二條線 所以我們下面的例子
 
+***.es(),.es()** 代表了兩條線 我們可以分別看他的說明
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").label("currenct week login failed counting"),
 
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d").label("last week  login failed counting").title("login failed compare")
 ````
+
