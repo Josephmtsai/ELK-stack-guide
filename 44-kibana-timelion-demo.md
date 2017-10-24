@@ -1,5 +1,3 @@
-
-
 #Kibana Timlion
 ![](/assets/timelion 1.png)
 ###用途
@@ -139,4 +137,7 @@
 
 我們可以把剛剛上面設定好的條件，存放到visual 內 就可以在Dashboard上面呈現資料
 
+![](/assets/TimeLion7.png)
 
+
+![](/assets/Timelion8.png)
