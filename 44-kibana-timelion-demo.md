@@ -32,4 +32,10 @@
 | tags          | text     | Custom Field | for 單純搜尋用 不能分析                 |
 | type          | text     | Custom Field | Document Type                           |
 
+請看下面例子:
+
+這樣會顯示一條
+````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
+
+````
