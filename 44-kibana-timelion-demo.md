@@ -61,6 +61,7 @@
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").bar()
 
 ````
+
 >所有的開始都是.es() 後面再. 他會有提示可以用的功能 可以簡單看一下功能
 ![](/assets/Timelion3.png) 
 
