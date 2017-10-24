@@ -70,6 +70,8 @@
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d").label("last week  login failed counting").title("login failed compare")
 ````
 >.label 可以標注你的線說明
+
 >offset 代表是你想要相同的條件內查詢是過去幾天的資料
+
 結果就會像這樣
 ![](/assets/TimeLion4.png)
