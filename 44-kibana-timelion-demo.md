@@ -32,6 +32,9 @@
 | tags          | text     | Custom Field | for 單純搜尋用 不能分析                 |
 | type          | text     | Custom Field | Document Type                           |
 
+
+##單一條線的圖表
+
 請看下面例子:
 
 這樣會顯示一條線 預設是 根據你的查詢條件來
@@ -56,3 +59,4 @@
 
 
 
+###
