@@ -32,3 +32,23 @@ https://www.elastic.co/guide/en/watcher/current/watching-marvel-data.html
 
 # Wacher介紹
 
+Wacher在Management 裡面可以設定
+
+![](/assets/Elk watcher setting.png)
+
+
+基本上按了Add以後會看到這個畫面
+![](/assets/ELK Watcher Default.png)
+
+### 基礎他有分成幾塊
+
+* trigger :代表是重複執行的時間
+* input :查詢的條件
+* condition : 設定什麼條件會match
+* action: 要執行什麼動作
+
+
+### Simulate
+
+
+
