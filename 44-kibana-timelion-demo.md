@@ -71,7 +71,7 @@
 
 就如我們一開始講的.es() 代表一條線 , 可以分隔第二條線 所以我們下面的例子
 
-***.es(),.es()** 代表了兩條線 我們可以分別看他的說明
+**.es(),.es()** 代表了兩條線 我們可以分別看他的說明
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").label("currenct week login failed counting"),
 
@@ -83,3 +83,8 @@
 
 結果就會像這樣 可以看到Login失敗過去七天相同時間的比較
 ![](/assets/TimeLion4.png)
+
+
+## 資料加總相除的比例
+
+接著我們舉個
