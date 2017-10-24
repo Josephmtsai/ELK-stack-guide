@@ -135,3 +135,8 @@
 
 ![](/assets/Timelion6.png)
 
+#將資料放到Dahboard
+
+我們可以把剛剛上面設定好的條件，存放到visual 內 就可以在Dashboard上面呈現資料
+
+
