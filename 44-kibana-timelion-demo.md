@@ -39,6 +39,8 @@
 
 請看下面例子:
 
+**我們想看到現在登入失敗的線條**
+
 這樣會顯示一條線 預設是 根據你的查詢條件來
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
@@ -73,6 +75,7 @@
 
 就如我們一開始講的.es() 代表一條線 , 可以分隔第二條線 所以我們下面的例子
 
+**我們想達到判斷過去同期七天的登入失敗以及現在登入的線條比較**
 **.es(),.es()** 代表了兩條線 我們可以分別看他的說明
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
@@ -93,6 +96,7 @@
 
 接著我們舉個比較困難的例子
 
+**.divide() 裡面可以再放一個 查詢的.es()**
 
 
 ````
