@@ -56,6 +56,7 @@
 ![# ](/assets/TimeLion2.png)
 
 這樣就可以改成一條bar 
+
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").bar()
 
