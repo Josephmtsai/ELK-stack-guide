@@ -63,7 +63,7 @@
 
 
 ````
-.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").bars().label("currenct week login failed counting"),
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ").label("currenct week login failed counting"),
 
-.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d").label("last week  login failed counting").title("login failed compare").bars(stack="false")
+.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ", offset="-7d").label("last week  login failed counting").title("login failed compare")
 ````
