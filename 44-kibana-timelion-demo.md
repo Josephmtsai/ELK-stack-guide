@@ -34,8 +34,15 @@
 
 請看下面例子:
 
-這樣會顯示一條
+這樣會顯示一條線 預設是 根據你的查詢條件來
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
 
 ````
+> .es() 代表是每一條線 或是 長條圖 裡面的參數可以從右上角的docs去看
+> index 可以選定一個 table的資料
+> q 條件的查詢用法 跟discover一樣 可以去看文件 
+> 右上角是選擇這個查詢條件要查詢多久的資料
+> 下面的條件是選擇間隔時間
+![# ](/assets/TimeLion2.png)
+
