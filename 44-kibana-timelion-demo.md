@@ -96,12 +96,23 @@
 
 接著我們舉個比較困難的例子
 
+**我們想看到登入失敗 /全部登入的資料所佔有的百分比**
+
 **.divide() 裡面可以再放一個 查詢的.es()**
-
-
+**.multiply 可以放入數字**
 ````
 .es(index="xxx-application*",q="type:feature AND Method:LOGIN AND featureResult:FAIL ")
 .divide(.es(index="xxx-application*",q="type:feature AND Method:LOGIN AND ( featureResult:FAIL  or featureResult:SUCCESS)"))
 .multiply(100)
 .label("Current Week Login Failed Perfentage").yaxis(label="percentage")
 ````
+>所以查詢條件的分子 第一個也就是我們放入了 登入失敗的數量 接著第二個我們放入了相除的資料
+
+>也就是登入成功以及失敗的加總查詢 接著把他相除
+
+得到的結果會像這樣
+
+![](/assets/Timelion5.png)
+
+
+
