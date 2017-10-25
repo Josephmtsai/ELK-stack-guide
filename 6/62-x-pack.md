@@ -82,6 +82,10 @@ chain: 用來自由組合使用上面三種類型組成的多個input
 
 這裡我們用的是search
 
+例子就像下面這樣
+詳細語法請參考
+https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
+
 ````
 "input": {
     "search": {
