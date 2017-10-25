@@ -70,7 +70,18 @@ https://www.elastic.co/guide/en/x-pack/current/trigger-schedule.html#specifying-
 
 例子請看上面網址
 
-###input 查詢的條件
+###input 主要是你判斷條件的來源
+
+simple: 讀取靜態內容
+search: 讀取查詢語句執行後的返回結果
+http: 讀取HTTP請求的返回結果
+chain: 用來自由組合使用上面三種類型組成的多個input
+
+原文網址：https://kknews.cc/zh-tw/other/89b5gzq.html
+
+
+這裡我們用的是search
+
 
 
 ### Simulate
