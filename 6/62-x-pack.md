@@ -142,6 +142,52 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 
 
 
+````
+ "input": {
+    "search": {
+      "request": {
+        "search_type": "query_then_fetch",
+        "indices": [],
+        "types": [
+          "request"
+        ],
+        "body": {
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "exists": {
+                    "field": "memberCode.keyword"
+                  }
+                },
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-60m"
+                    }
+                  }
+                },
+                {
+                  "match": {
+                    "geoip.country_name": "China"
+                  }
+                }
+              ]
+            }
+          },
+          "aggs": {
+            "distinct_memberCode": {
+              "cardinality": {
+                "field": "memberCode.keyword"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+````
 
 ### Simulate
 
