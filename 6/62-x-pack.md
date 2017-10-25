@@ -109,7 +109,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
                 },
                 {
                   "match": {
-                    "index_prefix.keyword": "188-member-application"
+                    "index_prefix.keyword": "xxxx-application"
                   }
                 },
                 {
