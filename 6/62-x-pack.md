@@ -82,7 +82,52 @@ chain: 用來自由組合使用上面三種類型組成的多個input
 
 這裡我們用的是search
 
-
+````
+"input": {
+    "search": {
+      "request": {
+        "search_type": "query_then_fetch",
+        "indices": [],
+        "types": [],
+        "body": {
+          "query": {
+            "bool": {
+              "must": [
+                {
+                  "match": {
+                    "Method": "LOGIN"
+                  }
+                },
+                {
+                  "match": {
+                    "type.keyword": "feature"
+                  }
+                },
+                {
+                  "match": {
+                    "index_prefix.keyword": "188-member-application"
+                  }
+                },
+                {
+                  "match": {
+                    "module.keyword": "desktop"
+                  }
+                },
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-10m"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+````
 
 ### Simulate
 
