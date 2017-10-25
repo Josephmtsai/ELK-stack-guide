@@ -197,6 +197,12 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 我們可以看到這裡查詢後就多了這個欄位可以提供我們使用 接下來要判斷或是action都可以用
 
 ![](/assets/es search distinct.png)
+
+
+### condition
+
+### actions
+
 ### Simulate
 
 
