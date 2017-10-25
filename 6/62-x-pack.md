@@ -142,6 +142,10 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 如果不確定可以把剛剛那段往dev tools 丟看看 如上圖 就可以看到結果
 
 
+我們再來看一個更進階的查詢
+
+我們希望找到過去一小時 是中國的資料然後group by userId 產生出一個新的欄位
+
 
 ````
  "input": {
@@ -190,6 +194,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 
 ````
 
+我們可以看到這裡查詢後就多了這個欄位可以提供我們使用 接下來要判斷或是action都可以用
+
+![](/assets/es search distinct.png)
 ### Simulate
 
 
