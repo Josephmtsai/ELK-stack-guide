@@ -47,7 +47,17 @@ Wacher在Management 裡面可以設定
 * condition : 設定什麼條件會match
 * action: 要執行什麼動作
 
+### Trigger
 
+控制觸發的時間以及遞迴的時間
+
+每十分鐘觸發
+
+```
+"trigger" : {
+  "schedule" : { "interval" : "10m" } 
+}
+```
 ### Simulate
 
 
