@@ -91,7 +91,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
     "search": {
       "request": {
         "search_type": "query_then_fetch",
-        "indices": [],
+        "indices": ["xxxx-aplication"],
         "types": [],
         "body": {
           "query": {
@@ -132,6 +132,16 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
     }
   }
 ````
+>最主要的query都在這裡請看條件是
+
+> Method = Login and type = feature , index_prefix= xxxx-application , index= xxxx-application 
+
+> 時間是 現在到過去十分鐘
+
+如果不確定可以把剛剛那段往dev tools 丟看看 如上圖 就可以看到結果
+
+
+
 
 ### Simulate
 
