@@ -50,14 +50,27 @@ Wacher在Management 裡面可以設定
 ### Trigger
 
 控制觸發的時間以及遞迴的時間
+https://www.elastic.co/guide/en/x-pack/current/trigger-schedule.html#specifying-times-using-objects
 
 每十分鐘觸發
 
-```
+````
 "trigger" : {
   "schedule" : { "interval" : "10m" } 
 }
-```
+````
+每天五點觸發
+````
+"trigger" : {
+  "schedule" : {
+    "daily" : { "at" : "17:00" }
+  }
+}
+````
+
+例子請看上面網址
+
+###input 查詢的條件
 ### Simulate
 
 
