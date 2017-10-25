@@ -157,7 +157,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
               "must": [
                 {
                   "exists": {
-                    "field": "memberCode.keyword"
+                    "field": "userId.keyword"
                   }
                 },
                 {
@@ -176,9 +176,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
             }
           },
           "aggs": {
-            "distinct_memberCode": {
+            "distinct_userId": {
               "cardinality": {
-                "field": "memberCode.keyword"
+                "field": "userId.keyword"
               }
             }
           }
