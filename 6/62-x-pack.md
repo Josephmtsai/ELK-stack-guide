@@ -132,6 +132,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
     }
   }
 ````
+
 >最主要的query都在這裡請看條件是
 
 > Method = Login and type = feature , index_prefix= xxxx-application , index= xxxx-application 
