@@ -200,11 +200,13 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 
 
 ### condition
+決定之後的actions 執行的條件
 
+判斷我們剛剛講的userId 在一小時內低於1000 就觸發
 ````
 "condition": {
     "compare": {
-      "ctx.payload.aggregations.distinct_memberCode.value": {
+      "ctx.payload.aggregations.distinct_userId.value": {
         "lte": 1000
       }
     }
