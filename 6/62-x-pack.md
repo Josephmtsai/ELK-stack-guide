@@ -243,5 +243,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 ````
 ### Simulate
 
+當前面設定都設定好後可以用這個
 
 
+![](/assets/simulate.png)
