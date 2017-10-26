@@ -213,7 +213,26 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
   }
 ````  
 ### actions
-
+````
+"my-logging-action": {
+      "logging": {
+        "level": "info",
+        "text": "There are {{ctx.payload.aggregations.distinct_memberCode.value}} documents in your index. Threshold is 1000."
+      }
+    },
+    "send_email": {
+      "email": {
+        "profile": "standard",
+        "to": [
+          "joseph.tsai@xuenn.com,kid.liu@xuenn.com"
+        ],
+        "subject": "China Member Less than 1000 in one hour",
+        "body": {
+          "text": " {{ctx.payload.aggregations.distinct_memberCode.value}}. Threshold is 1000."
+        }
+      }
+    }
+````
 ### Simulate
 
 
