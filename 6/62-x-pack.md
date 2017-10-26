@@ -215,12 +215,12 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 ### actions
 
 **如果要寄信需要設定MAIL SERVER的認證**
-
+**這裡的值**
 ````
 "my-logging-action": {
       "logging": {
         "level": "info",
-        "text": "There are {{ctx.payload.aggregations.distinct_memberCode.value}} documents in your index. Threshold is 1000."
+        "text": "There are {{ctx.payload.aggregations.distinct_userId.value}} documents in your index. Threshold is 1000."
       }
     },
     "send_email": {
@@ -231,7 +231,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
         ],
         "subject": "China Member Less than 1000 in one hour",
         "body": {
-          "text": " {{ctx.payload.aggregations.distinct_memberCode.value}}. Threshold is 1000."
+          "text": " {{ctx.payload.aggregations.distinct_userId.value}}. Threshold is 1000."
         }
       }
     }
