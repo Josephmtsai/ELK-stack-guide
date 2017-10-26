@@ -243,7 +243,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 ````
 ### Simulate
 
-當前面設定都設定好後可以用這個
+當前面設定都設定好後可以用這個來模擬我們的結果
 
 
 ![](/assets/simulate.png)
+
+![](/assets/simulate results.png)
