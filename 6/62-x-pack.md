@@ -201,6 +201,15 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 
 ### condition
 
+````
+"condition": {
+    "compare": {
+      "ctx.payload.aggregations.distinct_memberCode.value": {
+        "lte": 1000
+      }
+    }
+  }
+````  
 ### actions
 
 ### Simulate
