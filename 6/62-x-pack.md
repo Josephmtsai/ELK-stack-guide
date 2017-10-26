@@ -213,6 +213,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
   }
 ````  
 ### actions
+
+**如果要寄信需要設定MAIL SERVER的認證**
+
 ````
 "my-logging-action": {
       "logging": {
@@ -224,7 +227,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
       "email": {
         "profile": "standard",
         "to": [
-          "joseph.tsai@xuenn.com,kid.liu@xuenn.com"
+          "XXXX@gmail.com"
         ],
         "subject": "China Member Less than 1000 in one hour",
         "body": {
