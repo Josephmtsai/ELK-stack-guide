@@ -220,7 +220,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 **這裡的值**
 參考: https://www.elastic.co/guide/en/x-pack/current/actions-email.html
 
-這裡就可以看到寄信的條件
+這裡就可以看到寄信的內容以及LOG 的內容
 ````
 "my-logging-action": {
       "logging": {
