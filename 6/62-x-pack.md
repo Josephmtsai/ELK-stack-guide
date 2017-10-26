@@ -249,3 +249,5 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.6/search.html
 ![](/assets/simulate.png)
 
 ![](/assets/simulate results.png)
+
+如果要看更多請去官方看他的設定
