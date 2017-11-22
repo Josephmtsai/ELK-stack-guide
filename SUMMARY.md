@@ -1,8 +1,13 @@
 # Summary
 
 * [Introduction](README.md)
-* [File Prepare & JAVA File](chapter1.md)
-* [1.Install and Upgrade](install.md)
+* [Installation](quick-start.md)
+  * [Linux](quick-start/linux.md)
+    * [Preparation](quick-start/getting-files.md)
+    * [Start Install](quick-start/start-install.md)
+  * [Windows](quick-start/windows.md)
+    * [Preparation](quick-start/windows/getting-files.md)
+    * [Start install](quick-start/windows/start-install.md)
 * [2.Config](Config.md)
   * [2.1 Config Of Logstash](config_of_logstash.md)
   * [2.2 Config Of ElasticSearch](config_of_elasticsearch.md)
@@ -17,8 +22,4 @@
   * [4.4 Kibana TimeLion Demo](44-kibana-timelion-demo.md)
 * [5. FileBeat Config](filebeatconfig_md.md)
 * [File Beat Performance Setting](performance_setting.md)
-* [Logstash Performance Setting](logstash-performance-setting.md)
-* [6. X-Pack](6.md)
-  * [6.1 X-Pack Monitor](6/61.md)
-  * [6.2 X-Pack Alert](6/62-x-pack.md)
 

@@ -1,36 +1,19 @@
-# Elastic Logstash Kibana Install Setting Guide
+# Introduction
 
-## Update for Windows and linux version install and introduce
+## Why Elastic Stack
 
-*  Base on Window and linux install
-*  Base on Centos AND RPM install
-*  Base on FileBeat Setting
+* Keep logs in one place
+* Take data from any source, any format
+* Visualize data in real time
+* Open source
 
+## What is Elastic Stack (formerly known as ELK Stack)
 
-**Please know That Logstash and ElasticSearch Should not install in the same server, they need CPU for I/O**
+* **E**lastic search : A distributed, RESTful search and analytics database
+* **L**ogstash : Ingest data, processing, and send it to stash
+* **K**ibana : UI for search and visualize ElasticSeach data
+* File beats
+* X-Pack
+* ...
 
 ![](/assets/elkstack.png)
-
-## Prepare File & JAVA install
-
-## Install of ELK Stack
-
-## Adjust config File
-
-## Logstash Grok Pattern
-
-## File Beat Config
- 
-##X Pack 
-
-![](Picture1.png)
-
-* https://github.com/elastic/logstash/blob/v1.3.3/patterns/grok-patterns
-* https://grokdebug.herokuapp.com/
-* https://www.elastic.co/guide/en/elasticsearch/guide/current/heap-sizing.html
-* http://christophe.vandeplas.com/2014/06/setting-up-single-node-elk-in-20-minutes.html
-* http://blog.91app.com/use-elk-to-process-system-log/
-* https://wsgzao.github.io/post/elk/
-* http://www.evanlin.com/using-logstash-elsticsearch-and-kibana/
-
-Create by joseph
