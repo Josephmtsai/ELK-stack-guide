@@ -22,4 +22,8 @@
   * [4.4 Kibana TimeLion Demo](44-kibana-timelion-demo.md)
 * [5. FileBeat Config](filebeatconfig_md.md)
 * [File Beat Performance Setting](performance_setting.md)
+* [Logstash Performance Setting](logstash-performance-setting.md)
+* [6. X-Pack](6.md)
+  * [6.1 X-Pack Monitor](6/61.md)
+  * [6.2 X-Pack Alert](6/62-x-pack.md)
 

@@ -1,19 +1,28 @@
-# Introduction
+# Elastic Stack guide
 
-## Why Elastic Stack
-
-* Keep logs in one place
-* Take data from any source, any format
-* Visualize data in real time
-* Open source
-
-## What is Elastic Stack (formerly known as ELK Stack)
-
-* **E**lastic search : A distributed, RESTful search and analytics database
-* **L**ogstash : Ingest data, processing, and send it to stash
-* **K**ibana : UI for search and visualize ElasticSeach data
-* File beats
-* X-Pack
-* ...
-
-![](/assets/elkstack.png)
+* [Introduction](README.md)
+* [Installation](quick-start.md)
+  * [Linux](quick-start/linux.md)
+    * [Preparation](quick-start/getting-files.md)
+    * [Start Install](quick-start/start-install.md)
+  * [Windows](quick-start/windows.md)
+    * [Preparation](quick-start/windows/getting-files.md)
+    * [Start install](quick-start/windows/start-install.md)
+* [2.Config](Config.md)
+  * [2.1 Config Of Logstash](config_of_logstash.md)
+  * [2.2 Config Of ElasticSearch](config_of_elasticsearch.md)
+  * [2.3 Config Of Kibana](config_of_kibana.md)
+  * [2.4 Plugin Install Of All Module](plugin_install_of_all_module.md)
+* [3. Logstash Grok Pattern 教學](logstash_grok.md)
+  * [3.1 Logstash for IIS Parsing](logstash_grok/31-logstash-for-iis-parsing.md)
+* [4. Kibana Using](Kibana_Using.md)
+  * [4.1 Kibana Index Setting](Kibana_index.md)
+  * [4.2 Kibana Search Setting](kibana_search_setting.md)
+  * [4.3 Kibana Useragent demo](43-kibana-useragent-demo.md)
+  * [4.4 Kibana TimeLion Demo](44-kibana-timelion-demo.md)
+* [5. FileBeat Config](filebeatconfig_md.md)
+* [File Beat Performance Setting](performance_setting.md)
+* [Logstash Performance Setting](logstash-performance-setting.md)
+* [6. X-Pack](6.md)
+  * [6.1 X-Pack Monitor](6/61.md)
+  * [6.2 X-Pack Alert](6/62-x-pack.md)
