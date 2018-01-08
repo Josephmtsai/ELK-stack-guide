@@ -22,6 +22,10 @@ https://www.elastic.co/guide/en/beats/filebeat/5.3/configuration-global-options.
 
 ###解決方法
 
+filebeat.publish_async: false (不要開)
+
+兩台SPI一週後沒開：14MB，有開：4845MB
+
 filebeat.spool_size: 4096 
 > 單獨設定這個就有效果 他有提示說設定這個會造成記憶體升高但是實際上沒有差異 總比你讓記憶體到幾GB好
 
