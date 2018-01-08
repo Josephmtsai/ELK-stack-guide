@@ -1,4 +1,8 @@
 # Performance Setting in Windows Memory High Problem
+
+此行config有重大影響，這個關了還有問題再往下看：
+**filebeat.publish_async: false (註解掉或不要開)**
+
 之前有遇過filebeat memory 越來越高的問題
 
 如圖片 開啟大約12HR後會到1.7GB
@@ -21,10 +25,6 @@ https://www.elastic.co/guide/en/beats/filebeat/5.3/configuration-global-options.
 所以如果 Log 量 十秒內3000筆 他就會讓記憶體卡住出不去
 
 ###解決方法
-
-filebeat.publish_async: false (不要開)
-
-兩台SPI一週後沒開：14MB，有開：4845MB
 
 filebeat.spool_size: 4096 
 > 單獨設定這個就有效果 他有提示說設定這個會造成記憶體升高但是實際上沒有差異 總比你讓記憶體到幾GB好
